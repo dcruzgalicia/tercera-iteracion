@@ -7,4 +7,4 @@ creator:
 type: file
 ---
 
-Este es un texto de ejemplo.
+Este es un texto de ejemplo. Esto es un cambio que queremos publicar.
