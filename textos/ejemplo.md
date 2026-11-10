@@ -1,5 +1,9 @@
 ---
-title: "Texto de ejemplo"
+title: Texto de ejemplo
+creator:
+  - Prueba
+  - dos
+  - tres
 type: file
 ---
 

@@ -53,6 +53,7 @@ collections:
           - name
         display_fields:
           - name
+        dropdown_threshold: 0
         multiple: true
         required: false
       - name: body
@@ -66,6 +67,7 @@ collections:
         widget: datetime
         type: date
         required: false
+        preview: false
       - name: keywords
         label: Palabras clave
         widget: relation
@@ -75,12 +77,15 @@ collections:
           - name
         display_fields:
           - name
+        dropdown_threshold: 0
         multiple: true
         required: false
+        preview: false
       - name: license
         label: Licencia
         widget: select
         required: false
+        dropdown_threshold: 0
         options: &a1
           - label: Usar la licencia global
             value: ""
@@ -88,15 +93,18 @@ collections:
             value: CC-BY-NC-ND-4.0
           - label: PF-AC-PR-FA-1.0
             value: PF-AC-PR-FA-1.0
+        preview: false
       - name: language
         label: Idioma
         widget: select
         required: false
+        dropdown_threshold: 0
         options:
           - label: Usar el idioma global
             value: ""
           - label: Español (México)
             value: es-MX
+        preview: false
       - name: slug
         label: Slug
         widget: string
@@ -105,6 +113,7 @@ collections:
           - ^[a-z0-9]+(?:-[a-z0-9]+)*$
           - Solo minúsculas, números y guiones
         hint: Opcional. Si lo dejas vacío, la CLI lo genera con el título.
+        preview: false
       - name: type
         label: Tipo
         widget: hidden
@@ -136,6 +145,7 @@ collections:
         label: Retrato
         widget: image
         required: false
+        preview: false
       - name: links
         label: Enlaces
         widget: list
@@ -148,6 +158,7 @@ collections:
           - name: url
             label: URL
             widget: string
+        preview: false
       - name: slug
         label: Slug
         widget: string
@@ -156,6 +167,7 @@ collections:
           - ^[a-z0-9]+(?:-[a-z0-9]+)*$
           - Solo minúsculas, números y guiones
         hint: Opcional. Si lo dejas vacío, la CLI lo genera con el título.
+        preview: false
       - name: type
         label: Tipo
         widget: hidden
@@ -195,6 +207,7 @@ collections:
           - name
         display_fields:
           - name
+        dropdown_threshold: 0
         multiple: true
         required: false
       - name: body
@@ -208,6 +221,7 @@ collections:
         widget: datetime
         type: date
         required: false
+        preview: false
       - name: keywords
         label: Palabras clave
         widget: relation
@@ -217,28 +231,35 @@ collections:
           - name
         display_fields:
           - name
+        dropdown_threshold: 0
         multiple: true
         required: false
+        preview: false
       - name: license
         label: Licencia
         widget: select
         required: false
+        dropdown_threshold: 0
         options: *a1
+        preview: false
       - name: language
         label: Idioma
         widget: select
         required: false
+        dropdown_threshold: 0
         options:
           - label: Usar el idioma global
             value: ""
           - label: Español (México)
             value: es-MX
+        preview: false
       - name: files
         label: Textos incluidos
         widget: list
         required: true
         label_singular: Texto
         hint: "Rutas relativas al repositorio, por ejemplo: textos/mi-texto.md."
+        preview: false
       - name: slug
         label: Slug
         widget: string
@@ -247,6 +268,7 @@ collections:
           - ^[a-z0-9]+(?:-[a-z0-9]+)*$
           - Solo minúsculas, números y guiones
         hint: Opcional. Si lo dejas vacío, la CLI lo genera con el título.
+        preview: false
       - name: type
         label: Tipo
         widget: hidden
@@ -280,22 +302,27 @@ collections:
         widget: datetime
         type: date
         required: false
+        preview: false
       - name: placement
         label: Ubicación
         widget: select
         required: false
+        dropdown_threshold: 0
         options:
           - top
           - bottom
+        preview: false
       - name: language
         label: Idioma
         widget: select
         required: false
+        dropdown_threshold: 0
         options:
           - label: Usar el idioma global
             value: ""
           - label: Español (México)
             value: es-MX
+        preview: false
       - name: slug
         label: Slug
         widget: string
@@ -304,6 +331,7 @@ collections:
           - ^[a-z0-9]+(?:-[a-z0-9]+)*$
           - Solo minúsculas, números y guiones
         hint: Opcional. Si lo dejas vacío, la CLI lo genera con el título.
+        preview: false
       - name: type
         label: Tipo
         widget: hidden
@@ -340,11 +368,13 @@ collections:
         label: Filtro
         widget: object
         required: false
+        hint: "Sólo para type: list."
         fields:
           - name: type
             label: Tipo de documento
             widget: select
             required: false
+            dropdown_threshold: 0
             options:
               - file
               - collection
@@ -359,6 +389,7 @@ collections:
               - name
             display_fields:
               - name
+            dropdown_threshold: 0
             required: false
           - name: date
             label: Fecha
@@ -384,21 +415,26 @@ collections:
               - name
             display_fields:
               - name
+            dropdown_threshold: 0
             required: false
           - name: path
             label: Ruta
             widget: string
             required: false
+        preview: false
       - name: order
         label: Orden
         widget: select
         required: false
+        dropdown_threshold: 0
+        hint: "Sólo para type: list."
         options:
           - date-desc
           - date-asc
           - title-asc
           - title-desc
           - creator-asc
+        preview: false
       - name: slug
         label: Slug
         widget: string
@@ -407,6 +443,7 @@ collections:
           - ^[a-z0-9]+(?:-[a-z0-9]+)*$
           - Solo minúsculas, números y guiones
         hint: Opcional. Si lo dejas vacío, la CLI lo genera con el título.
+        preview: false
       - name: type
         label: Tipo
         widget: hidden
@@ -442,6 +479,7 @@ collections:
           - name
         display_fields:
           - name
+        dropdown_threshold: 0
         multiple: true
         required: false
       - name: body
@@ -455,12 +493,14 @@ collections:
         widget: datetime
         type: date
         required: false
+        preview: false
       - name: pages
         label: Páginas
         widget: number
         required: false
         min: 1
         value_type: int
+        preview: false
       - name: lineLength
         label: Longitud de línea
         widget: number
@@ -468,29 +508,36 @@ collections:
         min: 0.1
         max: 1
         value_type: float
+        preview: false
       - name: letterhead
         label: Membrete
         widget: list
         required: false
+        preview: false
       - name: letterheadHeight
         label: Altura del membrete
         widget: string
         required: false
         hint: "Ejemplo: 5cm, 50mm o 2in"
+        preview: false
       - name: license
         label: Licencia
         widget: select
         required: false
+        dropdown_threshold: 0
         options: *a1
+        preview: false
       - name: language
         label: Idioma
         widget: select
         required: false
+        dropdown_threshold: 0
         options:
           - label: Usar el idioma global
             value: ""
           - label: Español (México)
             value: es-MX
+        preview: false
       - name: slug
         label: Slug
         widget: string
@@ -499,6 +546,7 @@ collections:
           - ^[a-z0-9]+(?:-[a-z0-9]+)*$
           - Solo minúsculas, números y guiones
         hint: Opcional. Si lo dejas vacío, la CLI lo genera con el título.
+        preview: false
       - name: type
         label: Tipo
         widget: hidden
@@ -510,11 +558,6 @@ collections:
         label: Menú principal
         file: menu.md
         fields:
-          - name: title
-            label: Título
-            widget: string
-            required: false
-            hint: Si se deja vacío, la CLI usará «Sin título».
           - name: links
             label: Enlaces
             widget: list
@@ -531,72 +574,6 @@ collections:
             label: Tipo
             widget: hidden
             default: menu
-  - name: inicio
-    label: Inicio
-    files:
-      - name: index
-        label: Página de inicio
-        file: index.md
-        media_folder: /assets/images
-        public_folder: assets/images
-        fields:
-          - name: title
-            label: Título
-            widget: string
-            required: false
-            hint: Si se deja vacío, la CLI usará «Sin título».
-          - name: subtitle
-            label: Subtítulo
-            widget: string
-            required: false
-          - name: body
-            label: Texto
-            widget: markdown
-            modes:
-              - raw
-            required: true
-          - name: date
-            label: Fecha
-            widget: datetime
-            type: date
-            required: false
-          - name: keywords
-            label: Palabras clave
-            widget: relation
-            collection: palabras_clave
-            value_field: name
-            search_fields:
-              - name
-            display_fields:
-              - name
-            multiple: true
-            required: false
-          - name: license
-            label: Licencia
-            widget: select
-            required: false
-            options: *a1
-          - name: language
-            label: Idioma
-            widget: select
-            required: false
-            options:
-              - label: Usar el idioma global
-                value: ""
-              - label: Español (México)
-                value: es-MX
-          - name: slug
-            label: Slug
-            widget: string
-            required: false
-            pattern:
-              - ^[a-z0-9]+(?:-[a-z0-9]+)*$
-              - Solo minúsculas, números y guiones
-            hint: Opcional. Si lo dejas vacío, la CLI lo genera con el título.
-          - name: type
-            label: Tipo
-            widget: hidden
-            default: file
   - name: palabras_clave
     label: Palabras clave
     label_singular: Palabra clave
