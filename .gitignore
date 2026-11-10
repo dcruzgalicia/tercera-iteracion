@@ -1,0 +1,8 @@
+# Generados por iteraciones (build y caché)
+dist/
+.iteraciones/
+node_modules/
+build.sh
+.DS_Store
+# diffs de los snapshots: se regeneran con iteraciones snapshots check
+diff/

@@ -1,0 +1,15 @@
+{
+  "name": "tercera-iteracion",
+  "private": true,
+  "scripts": {
+    "build": "iteraciones build",
+    "dev": "iteraciones preview"
+  },
+  "dependencies": {
+    "iteraciones-cli": "file:vendor/iteraciones-cli-0.26.0.tgz"
+  },
+  "devDependencies": {
+    "@sveltia/cms": "0.261.0",
+    "netlify-plugin-cache": "1.0.3"
+  }
+}

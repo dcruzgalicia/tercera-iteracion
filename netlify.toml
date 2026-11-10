@@ -1,0 +1,11 @@
+[build]
+  command = "bun run build"
+  publish = "dist/files"
+
+  [build.environment]
+    BUN_VERSION = "1.4.2"
+
+[[plugins]]
+  package = "netlify-plugin-cache"
+  [plugins.inputs]
+    paths = [".iteraciones", "dist"]
