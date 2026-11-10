@@ -6,7 +6,7 @@
     "dev": "iteraciones preview"
   },
   "dependencies": {
-    "iteraciones-cli": "file:vendor/iteraciones-cli-0.26.0.tgz"
+    "iteraciones-cli": "file:vendor/iteraciones-cli-0.26.1.tgz"
   },
   "devDependencies": {
     "@sveltia/cms": "0.261.0",

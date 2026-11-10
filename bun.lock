@@ -5,7 +5,7 @@
     "": {
       "name": "tercera-iteracion",
       "dependencies": {
-        "iteraciones-cli": "file:vendor/iteraciones-cli-0.26.0.tgz",
+        "iteraciones-cli": "file:vendor/iteraciones-cli-0.26.1.tgz",
       },
       "devDependencies": {
         "@sveltia/cms": "0.261.0",
@@ -172,7 +172,7 @@
 
     "is-number": ["is-number@7.0.0", "", {}, "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng=="],
 
-    "iteraciones-cli": ["iteraciones-cli@vendor/iteraciones-cli-0.26.0.tgz", { "dependencies": { "@sveltia/cms": "0.261.0", "@tailwindcss/cli": "4.3.3", "@tailwindcss/typography": "0.5.20", "commander": "^15.0.0", "ignore": "^7.0.6", "yaml": "^2.9.0", "zod": "^4.4.3", "zxing-wasm": "^3.1.3" }, "bin": { "iteraciones": "src/bin.ts" } }, "sha512-N1ivDHilY5AikD8GKboT/v/IxjBwQ3IsDwwH/XHgKVCgDUiU+MgciWJpZ4H0vYTsqTUXNZdOi9Debjxp1K/ePQ=="],
+    "iteraciones-cli": ["iteraciones-cli@vendor/iteraciones-cli-0.26.1.tgz", { "dependencies": { "@sveltia/cms": "0.261.0", "@tailwindcss/cli": "4.3.3", "@tailwindcss/typography": "0.5.20", "commander": "^15.0.0", "ignore": "^7.0.6", "yaml": "^2.9.0", "zod": "^4.4.3", "zxing-wasm": "^3.1.3" }, "bin": { "iteraciones": "src/bin.ts" } }, "sha512-1pLjfaXoeiafiHC4XPaB3aw8xnP4YmIlf2jAEGzLOswrp5a7ObFOGbMYAU9u/uyDl0mjH2L/9bh+/jqrAusZoQ=="],
 
     "jiti": ["jiti@2.7.0", "", { "bin": { "jiti": "lib/jiti-cli.mjs" } }, "sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ=="],
 
